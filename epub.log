@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=latex 2022.11.21)  30 NOV 2022 15:50
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\AddToHook{class/before}{\RequirePackage[#1,html]{tex4ht}\RequirePackage{tex4e
+book}}\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expan
+dafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4h
+t,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml,more
+2read.tex,charset=utf-8,charset=utf-8,epub,uni-html4.a.b.c.\input "\detokenize{
+epub}"
+! Emergency stop.
+<*> ...,uni-html4.a.b.c.\input "\detokenize{epub}"
+                                                  
+*** (job aborted, file error in nonstop mode)
+
+ 
+Here is how much of TeX's memory you used:
+ 18 strings out of 478239
+ 382 string characters out of 5850481
+ 289988 words of memory out of 5000000
+ 18358 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 12i,0n,19p,592b,10s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

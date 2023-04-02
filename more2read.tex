@@ -1,0 +1,165 @@
+\documentclass[UTF8,11pt,,oneside,final, ]{ctexart}
+\usepackage{graphicx,parallel,fontawesome5,multicol,xcolor,media9}
+\usepackage[top=2.54cm, bottom=2.54cm, left=2.07cm, right=2.07cm,headsep=1.0cm,marginparwidth={3cm}]{geometry}
+\usepackage[margin=10pt,font=small,labelfont=bf,]{caption}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black,filecolor=black,urlcolor=black,	citecolor=black,pdftitle=美文阅读,pdfauthor=Sion tine,pdfsubject={英语,紫晶计划},pdfkeywords={诗歌,文章},pdfstartview=FitB}
+\usepackage{ctex}
+\ctexset{
+	section/name = {第,天},
+	section/format =\huge\bfseries\raggedright,
+	subsection/name = {},
+	subsection/format =\centering,
+	secnumdepth ={0},
+}
+
+
+
+%\setmainfont{Noto Serif}
+%\setCJKmainfont{Source Han Serif SC Medium}
+%[BoldFont = {Source Han Serif SC Bold}, 
+%ItalicFont = {LXGW WenKai}] 
+%\setCJKsansfont{Source Han Sans CN}
+%\setCJKmonofont{LXGW WenKai Mono}
+
+%定义环境
+\newcommand{\dailyquote}[3] %[句子][作者][图片]
+{	
+	\ctexset{
+		subsection/format =\raggedright,
+	}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{#3}
+		\label{fig:#3}
+	\end{figure}
+	\subsection{{\color{violet}\faQuoteLeft}\quad\large\bfseries DailyQuote}
+	\begin{quotation}
+		#1
+		\begin{flushright}
+			\textit{——#2}
+		\end{flushright}
+	\end{quotation}
+\ctexset{
+	subsection/format =\centering,
+}
+}
+%--------------------------------------
+\newcommand{\poem}[4]
+{	\subsection{{\color{violet}\faFeather}\quad \large\bfseries #1}
+%	\begin{center}
+%		\textbf{#1}
+%	\end{center}
+	\begin{flushright}
+		\textit{#2}
+	\end{flushright}
+	\begin{Parallel}{84mm}{82mm}
+		\ParallelLText
+		{#3	}
+		
+		\ParallelRText
+		{#4}
+	\end{Parallel}
+}
+%-----------------------------------
+\newcommand{\poems}[6]
+{	\subsection{{\color{violet}\faFeather}\quad \large\bfseries #1}
+	%	\begin{center}
+		%		\textbf{#1}
+		%	\end{center}
+	\begin{flushright}
+		\textit{#2}
+	\end{flushright}
+	\begin{Parallel}{#3}{#5}
+		\ParallelLText
+		{#4	}
+		
+		\ParallelRText
+		{#6}
+	\end{Parallel}
+}
+%----------------------------------
+\newcommand{\music}[4]
+{	\subsection{{\color{violet}\faMusic }\quad \bfseries #1}
+	%	\begin{center}
+		%		\textbf{#1}
+		%	\end{center}
+	\begin{flushright}
+		\textit{#2}
+	\end{flushright}
+	\begin{Parallel}{86mm}{82mm}
+		\ParallelLText
+		{#3	}
+		
+		\ParallelRText
+		{#4}
+	\end{Parallel}
+}
+%---------------------------------
+\newcommand{\words}[3]{
+	\subsection{{\color{violet}\faBookReader}\quad\large\bfseries #1}
+%\begin{center}
+%\textbf{#1}
+%\end{center}
+\begin{flushright}
+\textit{#2}
+\end{flushright}
+{
+	
+	#3}
+}
+%---------------------------------
+\begin{document}
+	
+\pagestyle{empty}
+\begin{titlepage}
+%	\title{\zihao{0} \textbf{{\color{violet}\faPodcast} 美文阅读}}
+%	\date{\zihao{3}\textbf{2022年7月16日\footnote{
+%				{\color{violet}\faQuoteLeft}：DailyQuote\qquad 
+%				{\color{violet}\faFeather}： Poem of the Day \qquad 
+%				{\color{violet}\faBookReader}：Beauty of Words }}}
+\begin{center}
+	{\zihao{0} \textbf{{\color{violet}\faPodcast} 美文阅读\footnote{
+				{\color{violet}\faQuoteLeft}：DailyQuote\qquad 
+				{\color{violet}\faFeather}： Poem of the Day \qquad 
+				{\color{violet}\faBookReader}：Beauty of Words }}}\\
+	\vspace{4ex}
+	{\zihao{3}\textbf{\faDoorOpen：2022年7月16日}}\\
+	
+		\vspace{4ex}
+	{\zihao{3}\textbf{\faDoorClosed：2022年9月23日}}
+			
+		\begin{figure}
+			\centering
+			\includegraphics[width=1\linewidth]{more2read.jpg}
+			\caption*{}
+			\label{fig:more2read}
+		\end{figure}
+\end{center}
+\end{titlepage}
+%\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+\newpage
+\tableofcontents
+% \section{title}
+% \dailyquote{中英}{作者}{封面}
+% \poems{作品名}{作者}{0.5\linewidth}{英文}{0.5\linewidth}{中文}
+% \words{作品名}{作者}{内容}
+\include{7-16.tex}
+\include{7-18.tex}
+\include{7-20.tex}
+\include{7-22.tex}
+\include{7-25.tex}
+\include{7-27}
+\include{7-29}
+\include{8-01}
+\include{8-03}
+\include{8-05}
+\include{8-07}
+\include{8-08}
+\include{8-10}
+%\include{8-12}
+%\include{8-}
+\include{Before}
+\end{document}
